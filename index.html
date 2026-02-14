@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Happy New Year</title>
+    <style>
+        /* 整体样式 */
+        body {
+            background-color: #d32f2f; /* 喜庆大红色 */
+            margin: 0;
+            padding: 20px;
+            font-family: "Microsoft YaHei", sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 顶部标题 */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 80px;
+            margin: 0;
+            font-weight: lighter;
+        }
+
+        .header p {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* 插画部分 (中间的蛋糕/图标) */
+        .illustration {
+            font-size: 100px;
+            margin: 20px 0;
+        }
+
+        /* 留言墙布局 */
+        .wish-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        /* 单个留言卡片 */
+        .wish-card {
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.05); /* 半透明感 */
+            min-height: 150px;
+            position: relative;
+        }
+
+        .wish-card h3 {
+            margin-top: 0;
+            font-size: 18px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+            padding-bottom: 5px;
+            color: #ffeb3b; /* 亮黄色字体 */
+        }
+
+        .wish-card p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* 底部版权 */
+        .footer {
+            margin-top: 50px;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 600px) {
+            .header h1 { font-size: 50px; }
+            .header p { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>2026</h1>
+        <p>Happy new year !</p>
+    </div>
+
+    <div class="illustration">
+        🎂
+    </div>
+
+    <div class="wish-container">
+        <div class="wish-card">
+            <h3>SCH:</h3>
+            <p>新年快乐 (｡◕‿◕｡)<br>财运爆棚 诸事顺遂</p>
+        </div>
+
+        <div class="wish-card">
+            <h3>Ida: 新年快乐 ♡</h3>
+            <p>JJ GOH: 八方来财 🤑🤑</p>
+            <p style="font-style: italic; text-align: right;">sdy: 暴富暴美</p>
+        </div>
+
+        <div class="wish-card">
+            <h3>ZXL:</h3>
+            <p>愿君千万万发，入在祥瑞的麦，更有好事！</p>
+        </div>
+
+        <div class="wish-card">
+            <h3>SYX:</h3>
+            <p>愿君千万岁，无岁不逢春。财源滚滚！</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Copyright © 2026 New Year Celebration
+    </div>
+
+</body>
+</html>
